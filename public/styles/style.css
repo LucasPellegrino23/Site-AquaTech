@@ -1,0 +1,84 @@
+/* Adicionar aqui toda a estilização criada para sua aplicação. */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo{
+    color: rgb(18, 212, 247);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    justify-content: space-around;
+    color: rgb(250, 143, 43);
+}
+
+li{
+    list-style: none;
+    font-weight: bold;
+}
+
+a{
+    color: rgb(233, 137, 47);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.containerBanner{
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+    height: 400px;
+    color: white;
+    font-size: 38px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 200px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+hr{
+    height: 3px;
+    background-color: rgb(18, 212, 247);
+    border: 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    background-color: rgb(18, 212, 247);
+    height: 110px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.containerFooter{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.904);
+}
