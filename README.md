@@ -1,2 +1,2 @@
 # Site-AcquaTec
-Repositório de um site estático chamado AquaTech
+Repositório de um site estático chamado AcquaTec
