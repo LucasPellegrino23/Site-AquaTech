@@ -4,16 +4,20 @@
     padding: 0;
 }
 
+
+/* Geral */
+
 .header{
     background-color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: solid 3px rgb(18, 212, 247);
 }
 
-.titulo{
+.header .titulo{
     color: rgb(18, 212, 247);
 }
 
-.container{
+.header .container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -21,7 +25,7 @@
     align-items: center;
 }
 
-.navbar{
+.header .container .navbar{
     display: flex;
     flex-direction: row;
     width: 550px;
@@ -29,40 +33,22 @@
     color: rgb(250, 143, 43);
 }
 
-li{
+.header .container .navbar li{
     list-style: none;
     font-weight: bold;
 }
 
-a{
+.header .container .navbar li a{
     color: rgb(233, 137, 47);
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
 }
 
-.containerBanner{
-    margin-bottom: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
-    height: 400px;
-    color: white;
-    font-size: 38px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-right: 200px;
+.header .container .navbar .agora{
+    border-bottom: solid 2px rgb(233, 137, 47);
 }
 
-.bold{
-    font-weight: bold;
-}
-
-hr{
-    height: 3px;
-    background-color: rgb(18, 212, 247);
-    border: 0;
-}
 
 .footer{
     display: flex;
@@ -75,10 +61,127 @@ hr{
     width: 100%;
 }
 
-.containerFooter{
+.footer .container{
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     text-align: center;
     color: rgba(255, 255, 255, 0.904);
+}
+
+
+/* Pagina Inicial */
+
+.banner .container{
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+    height: 400px;
+    color: white;
+    font-size: 38px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 200px;
+}
+
+.banner .container p{
+    width: 250px;
+}
+
+.banner .container span{
+    font-weight: bold;
+}
+
+.social .container .boxes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social .container .boxes .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 360px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.social .container .boxes .box img{
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.social .container .boxes .box h4{
+    color: rgb(226, 13, 137);
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+
+/* Página de cadastro */
+
+.body{
+    background-image: url('../assets/imgs/bg-jelly-fish-para_outras_pags.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.login .container{
+    background-color: aliceblue;
+    color: rgb(230, 102, 123);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 500px;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.login .container .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 95%;
+}
+
+.login .container .card-cadastro h2{
+    font-size: 26px;
+}
+
+.login .container .card-cadastro .formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+    width: 95%;
+}
+
+.login .container .card-cadastro .formulario .campo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 50px;
+    width: 100%;
+}
+
+.login .container .card-cadastro .formulario .campo input{
+    width: 100%;
+    text-align: center;
 }
