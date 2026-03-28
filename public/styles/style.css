@@ -7,6 +7,13 @@
 
 /* Geral */
 
+body{
+    background-image: url('../assets/imgs/bg-jelly-fish-para_outras_pags.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .header{
     background-color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -53,9 +60,8 @@
 .footer{
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+
     background-color: rgb(18, 212, 247);
-    position: absolute;
     height: 110px;
     bottom: 0;
     width: 100%;
@@ -73,7 +79,6 @@
 /* Pagina Inicial */
 
 .banner .container{
-    margin-bottom: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,6 +102,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-color: white;
+    height: 400px;
 }
 
 .social .container .boxes .box{
@@ -121,22 +128,12 @@
     margin-bottom: 15px;
 }
 
-
-/* Página de cadastro */
-
-.body{
-    background-image: url('../assets/imgs/bg-jelly-fish-para_outras_pags.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
 .login{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: max-content;
+    min-height: 80vh;
 }
 
 .login .container{
@@ -144,13 +141,12 @@
     color: rgb(230, 102, 123);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    height: 500px;
+    height: 600px;
     width: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    margin: 100px;
 }
 
 .login .container .card{
@@ -185,8 +181,125 @@
 }
 
 .login .container .card-cadastro .formulario .campo input{
+    margin-top: 10px;
     width: 100%;
     text-align: center;
     height: 40px;
-    border-radius: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: solid 2px rgb(18, 212, 247);
+}
+
+.login .container .card-cadastro .formulario .botao{
+    margin-top: 20px;
+    height: 50px;
+    width: 120px;
+    border: 0px;
+    background-color: rgb(230, 102, 123);
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Página de Login */
+
+.login .container-login{
+    background-color: aliceblue;
+    color: rgb(230, 102, 123);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 450px;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.login .container-login .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 95%;
+}
+
+.login .container-login .card-login h2{
+    font-size: 26px;
+}
+
+.login .container-login .card-login .formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+    width: 95%;
+}
+
+.login .container-login .card-login .formulario .campo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 80px;
+    width: 100%;
+}
+
+.login .container-login .card-login .formulario .campo input{
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: solid 2px rgb(18, 212, 247);
+}
+
+.login .container-login .card-login .formulario .botao{
+    margin-top: 20px;
+    height: 45px;
+    width: 120px;
+    border: 0px;
+    background-color: rgb(230, 102, 123);
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Página do Simulador */
+.simulador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.simulador .container{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    width: 600px;
+    height: 80vh;
+    background-color: white;
+    padding: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.simulador .container h2{
+    font-size: 30px;
 }
